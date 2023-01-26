@@ -1,0 +1,8 @@
+function solution(n) {
+    var answer = [];
+    for(let i=0 ; i<=n; i++){   //5
+        if(n%i == 0)
+            answer.push(i)
+    }
+    return answer.sort((a,b)=>a-b);
+}
