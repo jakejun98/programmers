@@ -1,5 +1,4 @@
 function solution(left, right) {
-    let array = []
     let answer = 0;
     
     for(let i=left ; i<=right ; i++){
