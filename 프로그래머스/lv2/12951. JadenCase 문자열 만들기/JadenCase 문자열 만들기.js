@@ -1,22 +1,7 @@
 function solution(s) {
-    let arr = [];
-    let word = '';
-
-    for (let i = 0; i < s.length; i++) {
-        if (s[i] === ' ') {
-            if (word.length > 0) {
-                arr.push(word.charAt(0).toUpperCase() + word.slice(1).toLowerCase());
-                word = '';
-            }
-            arr.push(' '); // 연속된 공백 추가
-        } else {
-            word += s[i];
-        }
+    var arr = s.split(' ');
+    for(var i = 0; i<arr.length; i++) {
+        arr[i] = arr[i].charAt(0).toUpperCase() + arr[i].substring(1, arr[i].length).toLowerCase();
     }
-
-    if (word.length > 0) {
-        arr.push(word.charAt(0).toUpperCase() + word.slice(1).toLowerCase());
-    }
-
-    return arr.join('');
+    return arr.join(' ');
 }
