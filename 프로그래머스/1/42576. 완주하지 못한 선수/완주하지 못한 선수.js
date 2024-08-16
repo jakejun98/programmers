@@ -1,4 +1,5 @@
 function solution(participant, completion) {
+    // 키는 참가자 , 키값은 등장횟수
     const participantMap = new Map();
 
     // 참가자 이름을 Map에 저장하고, 각 이름의 등장 횟수를 기록합니다.
