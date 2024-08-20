@@ -20,7 +20,7 @@ function solution(board, moves) {
         
         
         count += 2;
-        i -= 2; // 뒤로 한 칸 이동하여 새로운 배열에서 중복된 쌍이 없는지 확인
+        i -= 2; 
     }
         
 }
