@@ -1,6 +1,6 @@
 function solution(n, words) {
     let usedWords = new Set();  // 중복 단어를 확인하기 위한 Set
-    usedWords.add(words[0]);
+    usedWords.add(words[0]); // 첫번째는 추가안돼서 임의로 넣음 
     
     for(let i=1;i<words.length;i++){
         if(words[i-1][words[i-1].length-1]!=words[i][0]){
