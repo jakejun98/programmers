@@ -17,3 +17,4 @@ function solution(arr) {
     }
     return  ans.reduce((acc, num) => acc * num, 1)
 }
+// divided 로 스위치느낌 , while 조건에서 마지막 요소만 1이 되는 경우는 의미가없음을 이해함 
