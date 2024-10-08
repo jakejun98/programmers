@@ -1,13 +1,12 @@
+
 function solution(n) {
-    const list = Array.from({length:n+1}).fill(0)
-    list[1]=1
-    list[2]=2
-        function pibo(number){
-        list[number] = list[number-1]%1234567+list[number-2]%1234567
-        if(number<n){
-        pibo(number+1)
-        }
-        }
-        pibo(3)
-    return list[n]%1234567
+    var answer = 0;
+    var dp=[];
+    dp[1]=1;
+    dp[2]=2;
+    for(var i=3;i<=n;i++){
+        dp[i]=dp[i-1]+dp[i-2] %1234567;
+    }
+    answer=dp[n];
+    return answer%1234567;
 }
